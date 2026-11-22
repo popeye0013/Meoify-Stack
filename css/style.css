@@ -102,7 +102,7 @@ a:focus-visible, summary:focus-visible {
 
 /* Hero */
 .hero {
-  padding: 4.5rem 0 5rem;
+  padding-block: 4.5rem 5rem;
   display: grid;
   grid-template-columns: 1.15fr .85fr;
   gap: 3rem;
@@ -257,9 +257,19 @@ footer {
 footer p { margin: 0 0 .75rem; max-width: 70ch; }
 
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding: 1.5rem 0 3.5rem; }
+  .hero { grid-template-columns: 1fr; padding-block: 1.25rem 3rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .seek .done { animation: none; stroke-dasharray: 40 100; }
+}
+
+/* Logo and headings */
+.brand { display: inline-flex; align-items: center; gap: .55rem; }
+.brand img { width: 32px; height: 32px; display: block; }
+.hero-logo { display: block; width: 72px; height: 72px; margin-bottom: 1.25rem; }
+.tagline {
+  font-family: Fraunces, Georgia, serif; font-weight: 600;
+  font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.2;
+  margin: -.75rem 0 1.25rem;
 }
