@@ -1,6 +1,5 @@
 :root {
   box-sizing: border-box;
-  padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
   color-scheme: dark;
   --bg: #15111b;
@@ -258,7 +257,7 @@ footer {
 footer p { margin: 0 0 .75rem; max-width: 70ch; }
 
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding: 2.5rem 0 3.5rem; }
+  .hero { grid-template-columns: 1fr; padding: 1.5rem 0 3.5rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
