@@ -101,20 +101,24 @@
       <div class="feature">
         <h3>Discover</h3>
         <ul>
-          <li><strong>Personal home.</strong> Quick picks, made-for-you mixes, trending songs, new releases, top artists and charts.</li>
-          <li><strong>Search that stays out of the way.</strong> Pill search field, voice input, live suggestions, recent searches and genre shortcuts.</li>
+          <li><strong>Personalized home.</strong> A greeting, quick picks, made-for-you mixes, trending songs, new releases, top artists and charts.</li>
+          <li><strong>Search that stays out of the way.</strong> A pill search field, voice input, live suggestions, recent searches and genre shortcuts.</li>
           <li><strong>Filters that persist.</strong> Switch between Tracks, Albums, Artists and Playlists without losing your query.</li>
+          <li><strong>Pull to refresh</strong> wherever the catalogue can change.</li>
         </ul>
       </div>
 
       <div class="feature">
         <h3>Play</h3>
         <ul>
-          <li><strong>Full player.</strong> Square artwork, wavy seek bar, shuffle, repeat, queue management and a floating mini player.</li>
-          <li><strong>Queue gestures.</strong> Hold a song to reorder the queue, or swipe it away to remove it.</li>
-          <li><strong>Synced lyrics.</strong> LRC lyrics from LRCLIB with auto-scroll and tap-to-seek, with a plain-text fallback.</li>
+          <li><strong>Full player.</strong> Square artwork, a wavy seek bar, shuffle, repeat, mute, queue management and a floating mini player.</li>
+          <li><strong>Queue gestures.</strong> Hold a song to reorder the queue, or swipe it to remove it. Swipe a song in any playlist or Liked Songs to add it to the queue.</li>
+          <li><strong>Now Playing menu.</strong> The three-dot menu opens a sheet with queue, share, video and sleep options, plus full song details.</li>
+          <li><strong>Synced lyrics.</strong> LRC lyrics from LRCLIB with auto-scroll and tap-to-seek, a lyrics preview under the artwork, and a plain-text fallback.</li>
           <li><strong>Sleep timer.</strong> Stop playback after 5, 10, 15, 30, 45 or 60 minutes.</li>
           <li><strong>Background playback.</strong> Media3 and ExoPlayer, with lock screen and notification controls.</li>
+          <li><strong>Volume and output.</strong> A media volume slider with a Bluetooth battery badge.</li>
+          <li><strong>Listen Together.</strong> Listen in real time with friends. Room codes keep track changes, play and pause, and seek position in sync across devices.</li>
         </ul>
       </div>
 
@@ -122,17 +126,22 @@
         <h3>Library and accounts</h3>
         <ul>
           <li><strong>Your music, in one place.</strong> Liked songs, playlists, saved albums and history, in list or grid layouts.</li>
-          <li><strong>Works without an account.</strong> Use a local profile and library. Sign in only if you want a personal feed and history sync.</li>
+          <li><strong>YouTube Music playlists.</strong> Your account playlists appear in your library and open straight in the player.</li>
+          <li><strong>Works without an account.</strong> Use a local profile and library. Sign in only if you want a personalized feed and sync.</li>
+          <li><strong>Listening history sync.</strong> Real listens are reported to your account, the same way YouTube’s web player does it.</li>
+          <li><strong>Meoify Wrapped.</strong> Monthly, yearly and all-time insights, including top tracks, top artists, total hours and listening patterns. Everything is computed on your device.</li>
           <li><strong>Backup and restore.</strong> Export playlists and your profile to a readable .json file.</li>
         </ul>
       </div>
 
       <div class="feature">
-        <h3>Design</h3>
+        <h3>Design and details</h3>
         <ul>
-          <li><strong>Material 3 Expressive.</strong> Light, dark and pure-black themes, with dynamic colour on Android 12 and up.</li>
-          <li><strong>Real album artwork.</strong> Covers come from Spotify, then Apple iTunes, then YouTube Music. Video frames are never used as artwork.</li>
+          <li><strong>Material 3 Expressive.</strong> Light, dark and pure-black themes, with dynamic colour on Android 12 and up, including the splash screen.</li>
+          <li><strong>Real album artwork.</strong> Covers come from Spotify, then Apple iTunes, then YouTube Music. Video frames are never used as artwork, and covers are cached so they load fast.</li>
           <li><strong>High refresh rate.</strong> Uses up to 120 Hz where the display supports it.</li>
+          <li><strong>Sharing.</strong> Share songs or jump to album and artist pages from the track menu.</li>
+          <li><strong>In-app updates.</strong> Read release notes in Settings and get an optional home-screen prompt when an update is ready.</li>
         </ul>
       </div>
     </div>
@@ -145,13 +154,14 @@
       <table>
         <tbody>
           <tr><th scope="row">Auto</th><td>Adapts to your connection. Wi-Fi keeps the best stream, and mobile data stays balanced.</td></tr>
-          <tr><th scope="row">Lossless (Hi-Res)</th><td>Up to 24-bit FLAC from a hifi-api or Tidal-compatible server.</td></tr>
+          <tr><th scope="row">Hi-Res Audio</th><td>Up to 24-bit, 192 kHz FLAC from a hifi-api or Tidal-compatible server.</td></tr>
+          <tr><th scope="row">CD Lossless</th><td>16-bit, 44.1 kHz FLAC from the same server.</td></tr>
           <tr><th scope="row">Standard (320 kbps)</th><td>320 kbps AAC from the same lossless server.</td></tr>
-          <tr><th scope="row">Balanced (256 kbps)</th><td>256 kbps AAC or Opus, the native YouTube Music stream.</td></tr>
-          <tr><th scope="row">Data Saver</th><td>Low-bitrate audio to reduce mobile data use.</td></tr>
+          <tr><th scope="row">YouTube Music</th><td>128 to 256 kbps AAC or Opus, the native YouTube Music stream.</td></tr>
+          <tr><th scope="row">Data Saver</th><td>96 kbps AAC to reduce mobile data use.</td></tr>
         </tbody>
       </table>
-      <p class="note">YouTube Music tops out at 256 kbps without help. To go higher, add a server under Settings, then Playback, then Lossless server. Meoify never upsamples or fakes lossless audio, and when a server is missing or fails, those tiers fall back to the best YouTube Music stream.</p>
+      <p class="note">YouTube Music tops out at 256 kbps on its own. To go higher, add a server under Settings, then Playback, then Lossless server. Meoify accepts a hifi-api or Tidal-compatible server for Hi-Res FLAC, or a 320 kbps server for AAC, and detects which one you pasted. You can name the server and test it before saving. Meoify never upsamples or fakes lossless audio. If no server is set or it fails, those tiers fall back to the best YouTube Music stream. A new mode applies from the next track.</p>
     </div>
   </section>
 
